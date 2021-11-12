@@ -89,7 +89,7 @@ export default class UserClass {
     try {
       const users = await crud._getAll("name email ban role branch");
 
-      return res.json(response.successResponse(users));
+      return res.json(users);
     } catch (err) {
       console.log({ getAllUser: err });
       return res.json(response.serverErrorResponse);

@@ -159,7 +159,7 @@ var UserClass = /** @class */ (function () {
                         return [4 /*yield*/, crud._getAll("name email ban role branch")];
                     case 1:
                         users = _a.sent();
-                        return [2 /*return*/, res.json(response.successResponse(users))];
+                        return [2 /*return*/, res.json(users)];
                     case 2:
                         err_1 = _a.sent();
                         console.log({ getAllUser: err_1 });
